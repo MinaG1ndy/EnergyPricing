@@ -1,4 +1,4 @@
-<img width="274" height="31" alt="image" src="https://github.com/user-attachments/assets/33f015dc-db75-44dd-a9f8-2c9ed73c2035" /><img width="250" height="31" alt="image" src="https://github.com/user-attachments/assets/2141373d-5870-459e-9eee-d1cd77e3609a" /># EnergyPricing
+# EnergyPricing
 Energy Pricing Analysis  
 Data Source: Transparency platform entsoe.eu  
 Market, Energy Prices  
@@ -49,3 +49,7 @@ The maximum value is: 524.2700
 --- Shape Metrics ---
 The skewness is: -0.4908  
 The excess kurtosis is: 6.3060  
+
+Distribution Shape results:
+<img width="3520" height="1634" alt="anaconda_projects_ded83cfd-535e-4296-9093-a2531b9e9461_my_plot" src="https://github.com/user-attachments/assets/5ffc9e44-9113-4128-9b5a-21b6a21087e1" />
+
