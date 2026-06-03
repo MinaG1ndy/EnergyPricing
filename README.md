@@ -1,4 +1,4 @@
-# EnergyPricing
+<img width="274" height="31" alt="image" src="https://github.com/user-attachments/assets/33f015dc-db75-44dd-a9f8-2c9ed73c2035" /><img width="250" height="31" alt="image" src="https://github.com/user-attachments/assets/2141373d-5870-459e-9eee-d1cd77e3609a" /># EnergyPricing
 Energy Pricing Analysis  
 Data Source: Transparency platform entsoe.eu  
 Market, Energy Prices  
@@ -13,3 +13,39 @@ I will Divide this exploration into 5 steps as follows:
 3- Segment and Compare (Split peak and off-peak hours)  
 4- Identify anomalies (Variance at extreme events)  
 5- Analysis Summary  
+
+Data Sample:  
+<img width="1582" height="151" alt="image" src="https://github.com/user-attachments/assets/a2bf6eeb-196d-4ceb-8c58-9369f48016a3" />  
+**MTU (CET/CEST):** Central European Time / Central European Summer Time, in format of duration window of the observations as "dd/mm/yyyy hh:mm:ss - dd/mm/yyyy hh:mm:ss"  
+**Area:** Represents Germany (BZN|DE-LU)  
+**Sequence:** Sequence 1 represents prices that are set for each full hour as one block price applied to all four quarter-hours. This is the main day-ahead market most people refer to.
+While Sequence 2 reflects a more precise supply/demand balance at that specific quarter-hour, Can diverge significantly from the hourly price because of factors like demand revised, different participants bidding...etc  
+**Day-ahead Price (EUR/MWh):** The price we would focus on, It can be negative or positive for **noe!
+Intraday Period (CET/CEST)**  
+**Intraday Price (EUR/MWh)**
+
+Questions to Answer at the end of the Analysis: 
+1- Why is the mean higher/lower than the median in electricity prices?  
+2- What does high kurtosis tell you about this market?  
+3- What do the 5th and 95th percentiles tell you that min/max don't?  
+4- Is electricity price normally distributed? Why does this matter for risk modeling?  
+5- Is this is normal for normal distribution peak to be lower than the dataset max?  
+6- Why do negative prices exist in electricity markets? Why do spikes exist? What does this mean for a trader trying to hedge?  
+
+Basic summary statistics results:
+The mean is: 95.1755  
+The median is: 98.0200  
+The variance is: 2263.9990  
+The standard deviation is: 47.5815  
+The minimum value is: -500.0000  
+The maximum value is: 524.2700  
+
+--- Percentiles ---
+ 5th Percentile: 1.0695  
+25th Percentile (Q1): 75.8775  
+75th Percentile (Q3): 122.1200  
+95th Percentile: 166.2525  
+
+--- Shape Metrics ---
+The skewness is: -0.4908  
+The excess kurtosis is: 6.3060  
