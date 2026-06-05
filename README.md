@@ -53,3 +53,21 @@ The excess kurtosis is: 6.3060
 Distribution Shape results:
 <img width="3520" height="1634" alt="anaconda_projects_ded83cfd-535e-4296-9093-a2531b9e9461_my_plot" src="https://github.com/user-attachments/assets/5ffc9e44-9113-4128-9b5a-21b6a21087e1" />
 
+Segment and Compare results:
+I had split the dataset into on-peak (8:00 - 20:00) and off-peak demand, also in semesters (Summer, Winter, Others)
+<img width="3300" height="1800" alt="anaconda_projects_ded83cfd-535e-4296-9093-a2531b9e9461_energy_price_distribution" src="https://github.com/user-attachments/assets/1584dfc7-f006-4bba-8584-d577465c9372" />
+<img width="3000" height="1800" alt="anaconda_projects_ded83cfd-535e-4296-9093-a2531b9e9461_average_energy_prices" src="https://github.com/user-attachments/assets/64f4135d-4080-45fc-be5b-b8c24f28e495" />
+
+Identify anomalies results:
+--- Negative Prices ---
+Count of readings: 1204
+Percentage of total observations: 3.4361%
+
+--- Prices Above 200 EUR/MWh ---
+Count of readings: 448
+Percentage of total observations: 1.2785%
+
+--- Variance Analysis ---
+Total extreme observations: 1652 (4.7146%)
+Percent of Total Sum of Squares contributed: 32.51%
+Percent reduction in variance if removed: 29.36%
