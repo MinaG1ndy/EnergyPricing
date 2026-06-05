@@ -73,3 +73,17 @@ Percentage of total observations: 1.2785%
 Total extreme observations: 1652 (4.7146%)
 Percent of Total Sum of Squares contributed: 32.51%
 Percent reduction in variance if removed: 29.36%
+
+Analysis Summary:
+In energy markets, the mean is always higher than the median as the wholesale electricity prices are highly right-skewed (positive).  
+<img width="1083" height="523" alt="Right skewed" src="https://github.com/user-attachments/assets/60a9d10a-bc69-4884-b315-b77aa75d1245" />
+
+As the market has to reach the equilibrium of supply and demand, spikes such as plant shutdowns are massive as it pulls the mean, dragging it upward; the median is barely moving because these spikes only represent a tiny fraction of the total year's 15-minute reading.  
+In financial markets, pricing can go down to zero.  
+In energy market, prices can go to negative due to inflexible generation of oversupply. at this case generators are shutdown manually before further negative negative prices (meaning it has a minimum ceiling). On the other hand, spikes can reach thousands of money (I don't know if there would be ceilings or no :)).  
+This creates an asymmetrical profile.  
+Surprisingly, our dataset has high negative outliers (-500 EUR/MWh on the left). Those extreme negative prices are rare but they pull the mean downward away from the median.  
+In our data: mean = 95.18, median = 98.02.  
+The skewness of -0.49 confirms this. Negative skew means the left tail; also, we have three times as many negative price events (1,204) as extreme high-price events (448).  
+The potential reasons: 
+Conclusion: If you used the mean to price a contract, you would be slightly underpricing it relative to where most prices actually settle. The median is a better description of the "typical" price in this market.
